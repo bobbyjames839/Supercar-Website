@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 10px 0;
+  background: black;
+  color: white;
+  z-index: 2;
+}
+
+#header span {
+  width: 33%;
+  margin: 0 15px;
+  height: 5px;
+}
+
+#header p {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 60px;
+}
+
+#header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+#header li {
+  margin: 0 40px;
+  cursor: pointer;
+}
+
+#header a {
+  text-decoration: none;
+  color: white;
+}
+
+#header a:hover {
+  color: rgb(190, 190, 190);
+}
+
+.spansTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -8px;
+  margin-bottom: 25px;
+  width: 450px;
+}
+
+.spans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.spansTop span {
+  margin: 0 5px;
+  height: 3px;
+}
+
+#open {
+  background: linear-gradient(#000000,rgba(0, 0, 0, 0.3)),url(homeimage.webp);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.title {
+  font-size: 50px;
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  position: absolute;
+  top: 3%;
+  left: 5%;
+}
+
+.logo {
+  width: 140px;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
+
+.opening-section {
+  text-align: center;
+  padding-top: 120px;
+  color: white;
+}
+
+.opening-section h1 {
+  font-size: 120px;
+  font-weight: 500;
+  font-family: sans-serif;
+  animation: fadeTitleIn 1s;
+}
+
+.opening-section p {
+  font-size: 22px;
+  padding-top: 20px;
+  font-style: italic;
+  animation: fadeTextIn 1s;
+}
+
+.opening-buttons {
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+  animation: fadeButtonsIn 2s;
+}
+
+.opening-buttons a {
+  margin: 0 10px;
+  border: 3px solid rgb(195, 0, 195);
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.opening-buttons a span {
+  width: 0;
+  height: 100%;
+  background: rgb(195, 0, 195);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: .25s;
+}
+
+.opening-buttons a:hover span {
+  width: 100%;
+}
+
+#ourCars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.cars-title {
+  font-size: 55px;
+}
+
+.cars-title div {
+  display: flex;
+  justify-content: center;
+}
+
+.cars-title div:hover span {
+  width: 200px;
+}
+
+.cars-title span {
+  width: 150px;
+  height: 5px;
+  margin: 10px;
+  transition: .5s;
+}
+
+.span1 {
+  background-color: blue;
+}
+
+.span2 {
+  background-color: green;
+}
+
+.span3 {
+  background-color: rgb(255, 0, 238);
+}
+
+.latest-arrivals {
+  width: 80%;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.car {
+  flex-basis: 30%;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.car-image {
+  width: 750px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.car-image:hover {
+  filter: brightness(60%);
+}
+
+.car-name {
+  font-size: 27px;
+  margin-left: 10px;
+}
+
+.car-price {
+  margin-left: 10px;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.stats {
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats p {
+  flex-basis: 50%;
+  margin: 5px 0;
+}
+
+.stats i {
+  margin-right: 8px;
+}
+
+hr {
+  margin: 10px;
+}
+
+#companyNews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 70px 0;
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+}
+
+.news-section {
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.news-ind {
+  flex-basis: 40%;
+  margin: 0 30px 50px 30px;
+  text-align: left;
+}
+
+.news-ind img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.news-ind p {
+  font-size: 18px;
+}
+
+.news-ind i {
+  margin-right: 8px;
+}
+
+.date {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.news-ind h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.news-ind button {
+  margin-top: 30px;
+  height: 55px;
+  width: 170px;
+  background-color: inherit;
+  border: 3px solid black;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.news-ind button:hover {
+  background: black;
+  color: white;
+}
+
+.newsletter {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter h1 {
+  letter-spacing: 2px;
+  font-size: 60px;
+  margin: 0;
+}
+
+.newsletter p {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.newsletter button {
+  padding: 15px 30px;
+  border: 3px solid black;
+  background: black;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.newsletter button:hover {
+  color: black;
+  background: white;
+}
+
+.newsletter i {
+  margin-left: 12px;
+  transform: rotate(45deg)
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 10px 0;
+  background: black;
+  color: white;
+}
+
+.footer span {
+  width: 450px;
+  margin: 0 5px;
+  height: 5px;
+}
+
+.footer-title {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 60px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.footer-bottom h1 {
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  width: 100%;
+  letter-spacing: 2px;
+  height: 50px;
+}
+
+.showroom, .about, .contact {
+  width: 15%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+} 
+
+.showroom-inner, .about-inner, .contact-inner {
+  width: 190px;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 2000px) {
+  .car-image {
+    width: 400px;
+  }
+}
+
+
+
+
+/* animations */
+
+@keyframes fadeTitleIn {
+  from {
+    transform: translateX(-3000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeButtonsIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
